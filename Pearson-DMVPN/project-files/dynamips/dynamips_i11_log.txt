@@ -1,0 +1,89 @@
+Mar 02 10:13:53.936 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+Mar 02 10:13:53.937 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 65028.
+Mar 02 10:13:54.120 HYPERVISOR: exec_cmd: hypervisor version 
+Mar 02 10:13:54.157 HYPERVISOR: exec_cmd: hypervisor working_dir D:\GNS3\projects\Pearson-DMVPN\project-files\dynamips 
+Mar 02 10:13:54.157 GENERAL: working_dir=D:\GNS3\projects\Pearson-DMVPN\project-files\dynamips
+Mar 02 10:13:54.192 HYPERVISOR: exec_cmd: vm create DMVPN 11 c7200 
+Mar 02 10:13:54.194 VM: VM DMVPN created.
+Mar 02 10:13:54.228 HYPERVISOR: exec_cmd: vm set_con_tcp_port DMVPN 2011 
+Mar 02 10:13:54.262 HYPERVISOR: exec_cmd: c7200 get_mac_addr DMVPN 
+Mar 02 10:13:54.298 HYPERVISOR: exec_cmd: vm get_status DMVPN 
+Mar 02 10:13:54.332 HYPERVISOR: exec_cmd: vm slot_add_binding DMVPN 0 0 C7200-IO-FE 
+Mar 02 10:13:54.367 HYPERVISOR: exec_cmd: c7200 set_mac_addr DMVPN ca0b.8edc.0000 
+Mar 02 10:13:54.402 HYPERVISOR: exec_cmd: vm set_ram DMVPN 512 
+Mar 02 10:13:54.448 HYPERVISOR: exec_cmd: vm set_ios DMVPN D:/GNS3/images/IOS/c7200-adventerprisek9-mz.153-3.XB12.image 
+Mar 02 10:13:54.480 HYPERVISOR: exec_cmd: vm set_disk0 DMVPN 0 
+Mar 02 10:13:54.487 HYPERVISOR: exec_cmd: vm get_status DMVPN 
+Mar 02 10:13:54.494 HYPERVISOR: exec_cmd: vm slot_add_binding DMVPN 5 0 PA-2FE-TX 
+Mar 02 10:13:54.501 HYPERVISOR: exec_cmd: vm get_status DMVPN 
+Mar 02 10:13:54.509 HYPERVISOR: exec_cmd: vm slot_add_binding DMVPN 1 0 PA-2FE-TX 
+Mar 02 10:13:54.516 HYPERVISOR: exec_cmd: vm get_status DMVPN 
+Mar 02 10:13:54.523 HYPERVISOR: exec_cmd: vm slot_add_binding DMVPN 4 0 PA-2FE-TX 
+Mar 02 10:13:54.530 HYPERVISOR: exec_cmd: vm get_status DMVPN 
+Mar 02 10:13:54.537 HYPERVISOR: exec_cmd: vm slot_add_binding DMVPN 2 0 PA-2FE-TX 
+Mar 02 10:13:54.544 HYPERVISOR: exec_cmd: vm get_status DMVPN 
+Mar 02 10:13:54.551 HYPERVISOR: exec_cmd: vm slot_add_binding DMVPN 3 0 PA-2FE-TX 
+Mar 02 10:13:54.558 HYPERVISOR: exec_cmd: vm get_status DMVPN 
+Mar 02 10:13:54.565 HYPERVISOR: exec_cmd: vm set_idle_pc DMVPN 0x60630d08 
+Mar 02 10:13:54.572 HYPERVISOR: exec_cmd: vm set_nvram DMVPN 512 
+Mar 02 10:13:54.579 HYPERVISOR: exec_cmd: vm set_exec_area DMVPN 64 
+Mar 02 10:13:54.586 HYPERVISOR: exec_cmd: vm set_config DMVPN configs/i11_startup-config.cfg 
+Mar 02 10:13:54.913 HYPERVISOR: exec_cmd: nio create_udp udp-212316e2-603d-4429-9021-24302da723ec 10001 127.0.0.1 10000 
+Mar 02 10:13:54.953 HYPERVISOR: exec_cmd: vm slot_add_nio_binding DMVPN 1 0 udp-212316e2-603d-4429-9021-24302da723ec 
+Mar 02 10:13:54.980 HYPERVISOR: exec_cmd: vm get_status DMVPN 
+Mar 02 10:13:55.045 HYPERVISOR: exec_cmd: nio create_udp udp-89523252-bd0a-4a9a-904a-7812a7171df1 10003 127.0.0.1 10002 
+Mar 02 10:13:55.075 HYPERVISOR: exec_cmd: vm slot_add_nio_binding DMVPN 1 1 udp-89523252-bd0a-4a9a-904a-7812a7171df1 
+Mar 02 10:13:55.108 HYPERVISOR: exec_cmd: vm get_status DMVPN 
+Mar 02 10:13:55.153 HYPERVISOR: exec_cmd: nio create_udp udp-7c9089b5-da9d-499b-80b2-363c14f7b239 10005 127.0.0.1 10004 
+Mar 02 10:13:55.191 HYPERVISOR: exec_cmd: vm slot_add_nio_binding DMVPN 2 0 udp-7c9089b5-da9d-499b-80b2-363c14f7b239 
+Mar 02 10:13:55.219 HYPERVISOR: exec_cmd: vm get_status DMVPN 
+Mar 02 10:13:55.248 HYPERVISOR: exec_cmd: nio create_udp udp-b7b82def-c5dd-468e-9ac3-2847d9d66af5 10007 127.0.0.1 10006 
+Mar 02 10:13:55.268 HYPERVISOR: exec_cmd: vm slot_add_nio_binding DMVPN 2 1 udp-b7b82def-c5dd-468e-9ac3-2847d9d66af5 
+Mar 02 10:13:55.299 HYPERVISOR: exec_cmd: vm get_status DMVPN 
+Mar 02 10:13:55.338 HYPERVISOR: exec_cmd: nio create_udp udp-b678dbe1-41d5-4a0b-ac4e-a429fa5de886 10009 127.0.0.1 10008 
+Mar 02 10:13:55.363 HYPERVISOR: exec_cmd: vm slot_add_nio_binding DMVPN 3 0 udp-b678dbe1-41d5-4a0b-ac4e-a429fa5de886 
+Mar 02 10:13:55.388 HYPERVISOR: exec_cmd: vm get_status DMVPN 
+Mar 02 10:13:55.421 HYPERVISOR: exec_cmd: nio create_udp udp-38874756-29c0-4dea-82fd-5d90c0896fa6 10011 127.0.0.1 10010 
+Mar 02 10:13:55.448 HYPERVISOR: exec_cmd: vm slot_add_nio_binding DMVPN 3 1 udp-38874756-29c0-4dea-82fd-5d90c0896fa6 
+Mar 02 10:13:55.472 HYPERVISOR: exec_cmd: vm get_status DMVPN 
+Mar 02 10:13:55.505 HYPERVISOR: exec_cmd: nio create_udp udp-02143cd3-cdd6-48c4-9c9b-aef66149fca5 10013 127.0.0.1 10012 
+Mar 02 10:13:55.531 HYPERVISOR: exec_cmd: vm slot_add_nio_binding DMVPN 4 0 udp-02143cd3-cdd6-48c4-9c9b-aef66149fca5 
+Mar 02 10:13:55.556 HYPERVISOR: exec_cmd: vm get_status DMVPN 
+Mar 02 10:13:55.588 HYPERVISOR: exec_cmd: nio create_udp udp-fe296616-26be-4570-8bd5-6c48067fa3d4 10015 127.0.0.1 10014 
+Mar 02 10:13:55.610 HYPERVISOR: exec_cmd: vm slot_add_nio_binding DMVPN 4 1 udp-fe296616-26be-4570-8bd5-6c48067fa3d4 
+Mar 02 10:13:55.616 HYPERVISOR: exec_cmd: vm get_status DMVPN 
+Mar 02 10:13:55.637 HYPERVISOR: exec_cmd: nio create_udp udp-ab09876d-96ad-4b9f-a447-061a46a91944 10017 127.0.0.1 10016 
+Mar 02 10:13:55.646 HYPERVISOR: exec_cmd: vm slot_add_nio_binding DMVPN 5 0 udp-ab09876d-96ad-4b9f-a447-061a46a91944 
+Mar 02 10:13:55.654 HYPERVISOR: exec_cmd: vm get_status DMVPN 
+Mar 02 10:13:55.674 HYPERVISOR: exec_cmd: nio create_udp udp-12a3c5a6-1b3f-4c75-8db0-bedfc8ed7ba1 10019 127.0.0.1 10018 
+Mar 02 10:13:55.683 HYPERVISOR: exec_cmd: vm slot_add_nio_binding DMVPN 5 1 udp-12a3c5a6-1b3f-4c75-8db0-bedfc8ed7ba1 
+Mar 02 10:13:55.690 HYPERVISOR: exec_cmd: vm get_status DMVPN 
+Mar 02 10:14:13.083 HYPERVISOR: exec_cmd: vm create Ghost 0 c7200 
+Mar 02 10:14:13.084 VM: VM Ghost created.
+Mar 02 10:14:13.100 HYPERVISOR: exec_cmd: vm set_ios Ghost D:/GNS3/images/IOS/c7200-adventerprisek9-mz.153-3.XB12.image 
+Mar 02 10:14:13.107 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Mar 02 10:14:13.114 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost c7200-adventerprisek9-mz.153-3.XB12.image-512.ghost 
+Mar 02 10:14:13.122 HYPERVISOR: exec_cmd: vm set_ram Ghost 512 
+Mar 02 10:14:13.129 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Mar 02 10:14:13.165 HYPERVISOR: exec_cmd: vm start Ghost 
+Mar 02 10:14:14.758 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Mar 02 10:14:14.767 HYPERVISOR: exec_cmd: vm stop Ghost 
+Mar 02 10:14:14.846 VM: VM Ghost shutdown.
+Mar 02 10:14:14.851 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Mar 02 10:14:14.851 VM: VM Ghost destroyed.
+Mar 02 10:14:14.860 HYPERVISOR: exec_cmd: vm set_ghost_status DMVPN 2 
+Mar 02 10:14:14.876 HYPERVISOR: exec_cmd: vm set_ghost_file DMVPN c7200-adventerprisek9-mz.153-3.XB12.image-512.ghost 
+Mar 02 10:14:14.884 HYPERVISOR: exec_cmd: vm get_status DMVPN 
+Mar 02 10:14:14.896 HYPERVISOR: exec_cmd: vm start DMVPN 
+Mar 02 23:02:17.137 HYPERVISOR: exec_cmd: vm extract_config DMVPN 
+Mar 02 23:02:20.870 HYPERVISOR: exec_cmd: vm get_status DMVPN 
+Mar 02 23:02:20.911 HYPERVISOR: exec_cmd: vm stop DMVPN 
+Mar 02 23:02:21.260 VM: VM DMVPN shutdown.
+Mar 02 23:02:21.297 HYPERVISOR: exec_cmd: vm extract_config DMVPN 
+Mar 02 23:02:24.662 HYPERVISOR: exec_cmd: vm get_status DMVPN 
+Mar 02 23:02:24.735 HYPERVISOR: exec_cmd: vm extract_config DMVPN 
+Mar 02 23:02:24.869 HYPERVISOR: exec_cmd: vm delete DMVPN 
+Mar 02 23:02:24.869 VM: VM DMVPN destroyed.
+Mar 02 23:02:24.943 HYPERVISOR: exec_cmd: hypervisor stop 
+Mar 02 23:02:25.162 HYPERVISOR: Stopped.
+Mar 02 23:02:25.162 GENERAL: reset done.

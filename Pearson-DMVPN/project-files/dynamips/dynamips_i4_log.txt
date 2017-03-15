@@ -1,0 +1,43 @@
+Mar 02 10:13:52.255 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+Mar 02 10:13:52.255 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 65007.
+Mar 02 10:13:52.794 HYPERVISOR: exec_cmd: hypervisor version 
+Mar 02 10:13:52.823 HYPERVISOR: exec_cmd: hypervisor working_dir D:\GNS3\projects\Pearson-DMVPN\project-files\dynamips 
+Mar 02 10:13:52.823 GENERAL: working_dir=D:\GNS3\projects\Pearson-DMVPN\project-files\dynamips
+Mar 02 10:13:52.851 HYPERVISOR: exec_cmd: vm create Hub4 4 c7200 
+Mar 02 10:13:52.852 VM: VM Hub4 created.
+Mar 02 10:13:52.879 HYPERVISOR: exec_cmd: vm set_con_tcp_port Hub4 2004 
+Mar 02 10:13:52.907 HYPERVISOR: exec_cmd: c7200 get_mac_addr Hub4 
+Mar 02 10:13:52.935 HYPERVISOR: exec_cmd: vm get_status Hub4 
+Mar 02 10:13:52.963 HYPERVISOR: exec_cmd: vm slot_add_binding Hub4 0 0 C7200-IO-FE 
+Mar 02 10:13:52.992 HYPERVISOR: exec_cmd: c7200 set_mac_addr Hub4 ca04.8d10.0000 
+Mar 02 10:13:53.020 HYPERVISOR: exec_cmd: vm set_ios Hub4 D:/GNS3/images/IOS/c7200-adventerprisek9-mz.153-3.XB12.image 
+Mar 02 10:13:53.048 HYPERVISOR: exec_cmd: vm set_ram Hub4 512 
+Mar 02 10:13:53.083 HYPERVISOR: exec_cmd: vm set_disk0 Hub4 0 
+Mar 02 10:13:53.116 HYPERVISOR: exec_cmd: vm get_status Hub4 
+Mar 02 10:13:53.152 HYPERVISOR: exec_cmd: vm slot_add_binding Hub4 1 0 PA-2FE-TX 
+Mar 02 10:13:53.187 HYPERVISOR: exec_cmd: vm get_status Hub4 
+Mar 02 10:13:53.221 HYPERVISOR: exec_cmd: vm slot_add_binding Hub4 2 0 PA-FE-TX 
+Mar 02 10:13:53.256 HYPERVISOR: exec_cmd: vm get_status Hub4 
+Mar 02 10:13:53.290 HYPERVISOR: exec_cmd: vm set_idle_pc Hub4 0x60630d08 
+Mar 02 10:13:53.324 HYPERVISOR: exec_cmd: vm set_nvram Hub4 512 
+Mar 02 10:13:53.359 HYPERVISOR: exec_cmd: vm set_exec_area Hub4 64 
+Mar 02 10:13:53.395 HYPERVISOR: exec_cmd: vm set_config Hub4 configs/i4_startup-config.cfg 
+Mar 02 10:13:55.084 HYPERVISOR: exec_cmd: nio create_udp udp-bfb25615-287c-4ffa-802e-e2ee851d2f42 10006 127.0.0.1 10007 
+Mar 02 10:13:55.113 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Hub4 1 0 udp-bfb25615-287c-4ffa-802e-e2ee851d2f42 
+Mar 02 10:13:55.139 HYPERVISOR: exec_cmd: vm get_status Hub4 
+Mar 02 10:14:15.391 HYPERVISOR: exec_cmd: vm set_ghost_status Hub4 2 
+Mar 02 10:14:15.425 HYPERVISOR: exec_cmd: vm set_ghost_file Hub4 c7200-adventerprisek9-mz.153-3.XB12.image-512.ghost 
+Mar 02 10:14:15.466 HYPERVISOR: exec_cmd: vm get_status Hub4 
+Mar 02 10:14:15.522 HYPERVISOR: exec_cmd: vm start Hub4 
+Mar 02 23:02:17.496 HYPERVISOR: exec_cmd: vm extract_config Hub4 
+Mar 02 23:02:21.266 HYPERVISOR: exec_cmd: vm get_status Hub4 
+Mar 02 23:02:21.308 HYPERVISOR: exec_cmd: vm stop Hub4 
+Mar 02 23:02:21.545 VM: VM Hub4 shutdown.
+Mar 02 23:02:21.550 HYPERVISOR: exec_cmd: vm extract_config Hub4 
+Mar 02 23:02:24.669 HYPERVISOR: exec_cmd: vm get_status Hub4 
+Mar 02 23:02:24.743 HYPERVISOR: exec_cmd: vm extract_config Hub4 
+Mar 02 23:02:24.878 HYPERVISOR: exec_cmd: vm delete Hub4 
+Mar 02 23:02:24.878 VM: VM Hub4 destroyed.
+Mar 02 23:02:24.951 HYPERVISOR: exec_cmd: hypervisor stop 
+Mar 02 23:02:25.167 HYPERVISOR: Stopped.
+Mar 02 23:02:25.167 GENERAL: reset done.

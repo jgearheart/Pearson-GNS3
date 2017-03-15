@@ -1,0 +1,43 @@
+Mar 02 10:13:52.531 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+Mar 02 10:13:52.532 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 65014.
+Mar 02 10:13:53.108 HYPERVISOR: exec_cmd: hypervisor version 
+Mar 02 10:13:53.143 HYPERVISOR: exec_cmd: hypervisor working_dir D:\GNS3\projects\Pearson-DMVPN\project-files\dynamips 
+Mar 02 10:13:53.144 GENERAL: working_dir=D:\GNS3\projects\Pearson-DMVPN\project-files\dynamips
+Mar 02 10:13:53.178 HYPERVISOR: exec_cmd: vm create Spoke12 6 c7200 
+Mar 02 10:13:53.179 VM: VM Spoke12 created.
+Mar 02 10:13:53.213 HYPERVISOR: exec_cmd: vm set_con_tcp_port Spoke12 2006 
+Mar 02 10:13:53.247 HYPERVISOR: exec_cmd: c7200 get_mac_addr Spoke12 
+Mar 02 10:13:53.282 HYPERVISOR: exec_cmd: vm get_status Spoke12 
+Mar 02 10:13:53.316 HYPERVISOR: exec_cmd: vm slot_add_binding Spoke12 0 0 C7200-IO-FE 
+Mar 02 10:13:53.351 HYPERVISOR: exec_cmd: c7200 set_mac_addr Spoke12 ca06.77d4.0000 
+Mar 02 10:13:53.386 HYPERVISOR: exec_cmd: vm set_ios Spoke12 D:/GNS3/images/IOS/c7200-adventerprisek9-mz.153-3.XB12.image 
+Mar 02 10:13:53.435 HYPERVISOR: exec_cmd: vm set_ram Spoke12 512 
+Mar 02 10:13:53.513 HYPERVISOR: exec_cmd: vm set_disk0 Spoke12 0 
+Mar 02 10:13:53.567 HYPERVISOR: exec_cmd: vm get_status Spoke12 
+Mar 02 10:13:53.600 HYPERVISOR: exec_cmd: vm slot_add_binding Spoke12 1 0 PA-2FE-TX 
+Mar 02 10:13:53.635 HYPERVISOR: exec_cmd: vm get_status Spoke12 
+Mar 02 10:13:53.654 HYPERVISOR: exec_cmd: vm slot_add_binding Spoke12 2 0 PA-FE-TX 
+Mar 02 10:13:53.679 HYPERVISOR: exec_cmd: vm get_status Spoke12 
+Mar 02 10:13:53.710 HYPERVISOR: exec_cmd: vm set_idle_pc Spoke12 0x60630d08 
+Mar 02 10:13:53.743 HYPERVISOR: exec_cmd: vm set_nvram Spoke12 512 
+Mar 02 10:13:53.779 HYPERVISOR: exec_cmd: vm set_exec_area Spoke12 64 
+Mar 02 10:13:53.814 HYPERVISOR: exec_cmd: vm set_config Spoke12 configs/i6_startup-config.cfg 
+Mar 02 10:13:55.213 HYPERVISOR: exec_cmd: nio create_udp udp-88cec883-ec7c-4e2a-9c05-e1e7d5ca8bb2 10010 127.0.0.1 10011 
+Mar 02 10:13:55.229 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Spoke12 1 0 udp-88cec883-ec7c-4e2a-9c05-e1e7d5ca8bb2 
+Mar 02 10:13:55.258 HYPERVISOR: exec_cmd: vm get_status Spoke12 
+Mar 02 10:14:14.972 HYPERVISOR: exec_cmd: vm set_ghost_status Spoke12 2 
+Mar 02 10:14:14.986 HYPERVISOR: exec_cmd: vm set_ghost_file Spoke12 c7200-adventerprisek9-mz.153-3.XB12.image-512.ghost 
+Mar 02 10:14:14.993 HYPERVISOR: exec_cmd: vm get_status Spoke12 
+Mar 02 10:14:15.000 HYPERVISOR: exec_cmd: vm start Spoke12 
+Mar 02 23:02:17.538 HYPERVISOR: exec_cmd: vm extract_config Spoke12 
+Mar 02 23:02:20.893 HYPERVISOR: exec_cmd: vm get_status Spoke12 
+Mar 02 23:02:20.927 HYPERVISOR: exec_cmd: vm stop Spoke12 
+Mar 02 23:02:21.100 VM: VM Spoke12 shutdown.
+Mar 02 23:02:21.124 HYPERVISOR: exec_cmd: vm extract_config Spoke12 
+Mar 02 23:02:24.643 HYPERVISOR: exec_cmd: vm get_status Spoke12 
+Mar 02 23:02:24.715 HYPERVISOR: exec_cmd: vm extract_config Spoke12 
+Mar 02 23:02:24.798 HYPERVISOR: exec_cmd: vm delete Spoke12 
+Mar 02 23:02:24.798 VM: VM Spoke12 destroyed.
+Mar 02 23:02:24.895 HYPERVISOR: exec_cmd: hypervisor stop 
+Mar 02 23:02:25.171 HYPERVISOR: Stopped.
+Mar 02 23:02:25.171 GENERAL: reset done.
